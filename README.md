@@ -1,2 +1,246 @@
-# FURURE-OF-LOAN-APPROVAL-WITH-EXPLAINABLE-AI
-ML application for predicting loan approvals using Random Forest with SHAP explainability. Features interactive visualizations, model training, and interpretable batch predictions.
+# Future of Loan Approvals with Explainable AI
+
+A machine learning application for predicting loan approval status and rejection reasons using Random Forest classifiers with explainable AI (SHAP) visualization. This desktop application provides an intuitive GUI for data exploration, model training, and interpretable predictions.
+
+## Contributors
+
+- T. Varshitha
+- S. Shiva Sai
+- P. Harikrishna
+- Y. Prasuna
+- T. Koushik
+
+## Features
+
+### 📊 Data Management
+- **Dataset Upload**: Load loan application datasets in CSV format
+- **Data Preprocessing**: Automatic handling of missing values and categorical encoding
+- **Train-Test Split**: Configurable dataset splitting for model validation
+
+### 🤖 Machine Learning Models
+- **Approval Prediction**: Random Forest classifier for loan approval status
+- **Rejection Analysis**: Separate model for predicting rejection reasons
+- **Comprehensive Metrics**: Accuracy, Precision, Recall, and F1-Score calculations
+
+### 📈 Visualization & Analysis
+- **Interactive Dashboards**: Real-time plotting of loan status and rejection distributions
+- **Feature Distribution**: Histogram and KDE plots for individual features
+- **Correlation Analysis**: Heatmap visualization of feature correlations
+- **3D Visualizations**: Scatter and surface plots for multi-dimensional data exploration
+- **Confusion Matrices**: Visual representation of model performance
+- **SHAP Explainability**: Feature importance and decision explanation plots
+
+### 🎯 Prediction & Results
+- **Batch Predictions**: Process test datasets and generate predictions
+- **Interactive Results Table**: View approval status and rejection reasons with sortable columns
+- **Export Results**: Save selected predictions to CSV format
+- **Logging**: Comprehensive application logs for tracking operations
+
+### 🎨 Modern UI
+- **Dark Hacker Theme**: Professional dark interface with neon accents
+- **Tabbed Navigation**: Organized workflow across Dashboard, Models, and Predict/Logs tabs
+- **Responsive Layouts**: Adaptive interface that scales with window resizing
+- **Gradient Buttons**: Modern interactive button styling with hover effects
+
+## Requirements
+
+- Python 3.7+
+- NumPy >= 1.19.2
+- Pandas >= 1.0.0
+- Scikit-learn >= 0.24.0
+- Matplotlib >= 3.2.0
+- Seaborn >= 0.11.0
+- SHAP >= 0.40.0
+- Jupyter >= 1.0.0
+
+## Installation
+
+### 1. Clone or Download the Repository
+```bash
+cd d:\Projects\Loan
+```
+
+### 2. Create a Virtual Environment (Recommended)
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Running the Application
+
+#### Option 1: Using the Batch File
+```bash
+run.bat
+```
+
+#### Option 2: Direct Python Execution
+```bash
+python LoanStatus.py
+```
+
+### Workflow Guide
+
+#### **Step 1: Load Dataset**
+1. Navigate to the **Dashboard** tab
+2. Click **Upload Dataset** button
+3. Select a loan application CSV file from the Dataset folder
+4. View the initial data distribution in the summary bar plots
+
+#### **Step 2: Preprocess Data**
+1. Click **Preprocess Dataset**
+2. The application will:
+   - Handle missing values
+   - Encode categorical variables
+   - Normalize numerical features
+3. View available features in the Feature Selector
+
+#### **Step 3: Explore Data**
+1. Select features from the Feature Selector listbox
+2. Use visualization buttons:
+   - **Plot Distribution**: Histogram with KDE for selected feature
+   - **Plot Correlation**: Correlation heatmap of all features
+   - **3D Scatter**: Interactive 3D scatter plot
+   - **3D Surface**: 3D surface plot for trend visualization
+
+#### **Step 4: Prepare Data for Training**
+1. Click **Split Train/Test**
+2. Dataset is split into 80% training and 20% testing sets
+
+#### **Step 5: Train Models**
+1. Navigate to the **Models** tab
+2. Click **Train Approval Model** to train the loan status classifier
+3. Click **Train Reject Model** to train the rejection reason classifier
+4. View real-time metrics in the Model Metrics table
+
+#### **Step 6: Interpret Model Decisions**
+1. Click **Explainable AI (SHAP)** to generate feature importance plots
+2. SHAP summary plots show which features most influence predictions
+
+#### **Step 7: Make Predictions**
+1. Navigate to the **Predict / Logs** tab
+2. Click **Predict (Select Test CSV)** and choose a test dataset
+3. Results are displayed in the interactive Results table
+4. Double-click any result row to view detailed information
+5. Click **Save Selected** to export predictions as CSV
+
+#### **Step 8: View Logs**
+- Application logs and operation summaries appear in the Results table
+- Click **Save Log** to export the complete operation log
+
+## Dataset Format
+
+Expected CSV columns:
+- `NAME_CONTRACT_STATUS`: Loan approval status (target variable)
+- `CODE_REJECT_REASON`: Reason for rejection (target variable)
+- Additional features: Numerical and categorical attributes for prediction
+
+Example dataset files are provided in the `Dataset/` folder:
+- `loan_application.csv`: Training dataset
+- `testData.csv`: Test dataset for predictions
+
+## Project Structure
+
+```
+Loan/
+├── LoanStatus.py           # Main application file
+├── requirements.txt        # Python dependencies
+├── run.bat                 # Windows batch runner
+├── DatasetLink.txt         # Dataset reference information
+├── Dataset/
+│   ├── loan_application.csv
+│   └── testData.csv
+└── README.md              # This file
+```
+
+## Technologies Used
+
+- **GUI Framework**: Tkinter (Python standard library)
+- **Machine Learning**: Scikit-learn (Random Forest)
+- **Data Processing**: Pandas, NumPy
+- **Visualization**: Matplotlib, Seaborn
+- **Explainability**: SHAP (SHapley Additive exPlanations)
+- **Numerical Computing**: SciPy
+
+## Key Features Explanation
+
+### Random Forest Classifier
+The application uses Random Forest for both approval and rejection prediction because:
+- Handles mixed data types effectively
+- Provides robust feature importance rankings
+- Resistant to overfitting with proper parameters
+- Fast training and prediction on large datasets
+
+### SHAP Explainability
+SHAP values provide:
+- **Feature Importance**: Which factors most influence decisions
+- **Instance-level Explanations**: Why a specific prediction was made
+- **Global Insights**: Overall model behavior patterns
+- **Trust & Transparency**: Understand model decisions for regulatory compliance
+
+## Performance Metrics
+
+The application calculates:
+- **Accuracy**: Overall correctness of predictions
+- **Precision**: Accuracy of positive predictions
+- **Recall**: Coverage of actual positive cases
+- **F1-Score**: Harmonic mean of precision and recall
+- **Confusion Matrix**: Detailed breakdown of prediction types
+
+## Troubleshooting
+
+### Missing Dependencies
+```bash
+pip install -r requirements.txt --upgrade
+```
+
+### Virtual Environment Issues
+```bash
+python -m venv .venv --clear
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### Dataset Not Found
+- Ensure CSV files are in the `Dataset/` folder
+- Check file names and format match expected structure
+- Verify required columns exist (`NAME_CONTRACT_STATUS`, `CODE_REJECT_REASON`)
+
+### SHAP Visualization Issues
+- Ensure matplotlib backend is properly configured
+- Try retraining the model before running SHAP analysis
+- Check that you have at least 200 test samples
+
+## Notes
+
+- The application runs with threading to prevent UI freezing during heavy computations
+- Processed models are stored in memory during the session
+- Large datasets (>100K rows) may require longer processing times
+- mplcursors is optionally imported for enhanced interactive plotting
+
+## Future Enhancements
+
+- Support for additional machine learning algorithms
+- Model persistence (save/load trained models)
+- Cross-validation support
+- Hyperparameter tuning interface
+- Real-time batch prediction streaming
+- Database integration for data storage
+
+## License
+
+This project is provided for educational and research purposes.
+
+## Contact & Support
+
+For questions or issues, please contact the project contributors listed above.
+
+---
+
+**Last Updated**: May 2026

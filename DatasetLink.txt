@@ -1,0 +1,9 @@
+https://www.kaggle.com/code/idrisguclu/home-credit-risk-previous-application/notebook
+
+
+Inferences:
+Loan purpose has high number of unknown values (XAP, XNA)
+Loan taken for the purpose of Repairs seems to have highest default rate
+A very high number application have been rejected by bank or refused by client which has purpose as repair or other. This shows that 
+purpose repair is taken as high risk by bank and either they are rejected or bank offers very high loan interest rate which is not feasible by the clients,
+thus they refuse the loan.

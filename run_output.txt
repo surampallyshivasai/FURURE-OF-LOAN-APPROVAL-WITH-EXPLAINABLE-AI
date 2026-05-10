@@ -1,0 +1,99 @@
+﻿C:/Users/shiva/OneDrive/Desktop/Loan/Dataset/loan_application.csv loaded
+   SK_ID_PREV  SK_ID_CURR  ... DAYS_TERMINATION  NFLAG_INSURED_ON_APPROVAL
+0     2030495      271877  ...            -37.0                        0.0
+1     2802425      108129  ...         365243.0                        1.0
+2     2523466      122040  ...         365243.0                        1.0
+3     2819243      176158  ...           -177.0                        1.0
+4     1784265      202054  ...              NaN                        NaN
+
+[5 rows x 37 columns]
+Processed features shape: (20000, 35)
+Total records found in dataset = 20000
+Total features found in dataset = 35
+80% dataset for training : 16000
+20% dataset for testing  : 4000
+Total records found in dataset = 20000
+Total features found in dataset = 35
+80% dataset for training : 16000
+20% dataset for testing  : 4000
+Random Forest Loan Status Accuracy  :  95.0
+Random Forest Loan Status Precision : 85.38029953216291
+Random Forest Loan Status Recall    : 90.68704983145133
+Random Forest Loan Status FScore    : 87.77974064777688
+C:/Users/shiva/OneDrive/Desktop/Loan/.venv/Scripts/python.exe : C:\Users\shiva\OneDrive\Desktop\Loan\LoanStatus.py:407: UserWarning: Starting 
+a Matplotlib GUI outside of the main thread will likely fail.
+At line:1 char:1
++ C:/Users/shiva/OneDrive/Desktop/Loan/.venv/Scripts/python.exe -u Loan ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\shiva\...ll likely fail.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  plt.figure(figsize =(7, 5))
+Random Forest Loan Rejection Accuracy  :  90.425
+Random Forest Loan Rejection Precision : 49.94254898688129
+Random Forest Loan Rejection Recall    : 48.85955032676588
+Random Forest Loan Rejection FScore    : 48.20600416585459
+C:\Users\shiva\OneDrive\Desktop\Loan\LoanStatus.py:407: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize =(7, 5))
+C:\Users\shiva\OneDrive\Desktop\Loan\LoanStatus.py:475: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8,5))
+C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\shap\plots\_beeswarm.py:719: UserWarning: Starting a Matplotlib GUI outside of 
+the main thread will likely fail.
+  plt.figure(figsize=(1.5 * max_display + 1, 0.8 * max_display + 1))
+Traceback (most recent call last):
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\cbook.py", line 361, in process
+    func(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 2956, in mouse_move
+    self.set_message(self._mouse_event_to_message(event))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 750, in set_message
+    self.message.set(s)
+    ~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\shiva\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 427, in set
+    return self._tk.globalsetvar(self._name, value)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+Traceback (most recent call last):
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\cbook.py", line 361, in process
+    func(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 2956, in mouse_move
+    self.set_message(self._mouse_event_to_message(event))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 750, in set_message
+    self.message.set(s)
+    ~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\shiva\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 427, in set
+    return self._tk.globalsetvar(self._name, value)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+Traceback (most recent call last):
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\cbook.py", line 361, in process
+    func(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 2956, in mouse_move
+    self.set_message(self._mouse_event_to_message(event))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 750, in set_message
+    self.message.set(s)
+    ~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\shiva\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 427, in set
+    return self._tk.globalsetvar(self._name, value)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+Traceback (most recent call last):
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\cbook.py", line 361, in process
+    func(*args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 2956, in mouse_move
+    self.set_message(self._mouse_event_to_message(event))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shiva\OneDrive\Desktop\Loan\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 750, in set_message
+    self.message.set(s)
+    ~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\shiva\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 427, in set
+    return self._tk.globalsetvar(self._name, value)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+No log available to save
