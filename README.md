@@ -154,7 +154,6 @@ python LoanStatus.py
 
 ### 📋 Workflow Guide
 
-### 📋 Workflow Guide
 
 Follow these steps to get predictions:
 
