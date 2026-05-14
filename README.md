@@ -39,7 +39,6 @@ This desktop application provides an **intuitive GUI** for data exploration, mod
 - [🔍 Key Features Explanation](#-key-features-explanation)
 - [📈 Performance Metrics](#-performance-metrics)
 - [❓ Troubleshooting](#-troubleshooting)
-- [🤝 Contributors](#-contributors)
 
 ---
 
@@ -241,8 +240,6 @@ Loan/
 ```
 
 ---
-
-## 🛠️ Technologies
 
 ## 🛠️ Technologies
 
